@@ -6,6 +6,7 @@ import os
 
 #学习笔记的存放的总目录
 NOTEBOOK_PATH= r"D:\BaiduSyncdisk\学习笔记"
+NUM_RES=3
 
 
 # 对文本进行分词
@@ -129,5 +130,5 @@ if __name__ == '__main__':
         for document_index, score in sorted(enumerate(doc_scores), key=lambda x: x[1], reverse=True):
             print(f"Document {list(hit_htmls.keys())[document_index]} - Score: {score:.4f}")
             i+=1
-            if(i>3):
+            if(i>NUM_RES):
                 break

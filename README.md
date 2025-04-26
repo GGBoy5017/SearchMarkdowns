@@ -31,6 +31,7 @@ python main.py
 修改main.py第8行的笔记目录路径：
 ```python
 NOTEBOOK_PATH = r"你的笔记目录绝对路径"  # 例如：r"D:\MyNotes"
+NUM_RES = 3  # 显示前3个匹配结果
 ```
 
 ## 使用示例
